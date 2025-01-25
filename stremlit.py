@@ -52,8 +52,8 @@ def local_css():
     """, unsafe_allow_html=True)
 
 # Load the trained model and vectorizer
-loaded_model = pickle.load(open('M:/fake-news-detection/trained_model.sav', 'rb'))
-vectorizer = pickle.load(open('M:/fake-news-detection/vectorizer.sav', 'rb'))
+loaded_model = pickle.load(open('trained_model.sav', 'rb'))
+vectorizer = pickle.load(open('vectorizer.sav', 'rb'))
 
 def fake_news_prediction(new_text):
 
